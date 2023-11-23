@@ -8,31 +8,55 @@
     <title>Hoja de Vida</title>
 </head>
 <body>
- <div class="wrapper">
-    <header>
-     <nav class="navbar">
-        <div class="brand">
-        <h2>I<span>Z</span></h2>
-        </div>
-      <ul class="menu">
-        <li class="active"><a  href="#"></a>Home</li>
-        <li><a href="#"></a>About</li>
-        <li><a href="#"></a>Contac</li>
-      </ul>
-     </nav>
-    </header>
- <main class="main">
-    <div class="informacion">
-        <h1> Ivan <span>Zambrano</span></h1>
-        <p>Soy un apasionado desarrollador web con experiencia sólida en la creación de sitios web dinámicos y atractivos. Mi enfoque se centra en la implementación de soluciones creativas y eficientes utilizando tecnologías clave como HTML, CSS y JavaScript.</p>
-        <a href="#">
-            <button class="descarga">Download CV</button>
-        </a>
-     </div>
-     <img src="/file.enc" alt="">
- </main>
- </div>
+    <div class="wrapper">
+        <header>
+            <nav class="navbar">
+                <div class="brand">
+                    <h2>I<span>Z</span></h2>
+                </div>
+                <ul class="menu">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contac</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main">
+            <div class="informacion">
+                <h1> Ivan <span>Zambrano</span></h1>
+                <p>Soy un apasionado desarrollador web con experiencia sólida en la creación de sitios web dinámicos y atractivos. Mi enfoque se centra en la implementación de soluciones creativas y eficientes utilizando tecnologías clave como HTML, CSS y JavaScript.</p>
+                <a href="#">
+                    <button class="descarga">Download CV</button>
+                </a>
+            </div>
+            <img src="/file.enc" alt="">
+            
+            <!-- Formulario -->
+            <div class="formulario">
+                <h2>Contact me</h2>
+                <form id="contactForm">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </main>
+    </div>
 
-   
+    <script>
+        // Puedes agregar tu lógica de validación o envío de formulario aquí usando JavaScript
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            // Puedes agregar lógica para enviar el formulario o validar los campos aquí
+            alert('Formulario enviado');
+            event.preventDefault(); // Evita que el formulario se envíe de la manera estándar
+        });
+    </script>
 </body>
 </html>
